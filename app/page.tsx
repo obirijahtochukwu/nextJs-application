@@ -19,7 +19,12 @@ export default function Home() {
       className="bg-cover bg-center flex justify-center items-center bg-no-repeat w-full min-h-[100vh] py-[20vh]"
     >
       <article className={styles.loginBox}>
-        <img src={"/media/login/logo.svg"} className={styles.logo} />
+        <Image
+          height={0}
+          width={0}
+          src={"/media/login/logo.svg"}
+          className={styles.logo}
+        />
 
         <div className={styles.title}>Welcome to xBid</div>
         <div className={styles.text}>
@@ -35,12 +40,19 @@ export default function Home() {
         </div>
 
         <div className={styles.btns}>
-          {btns.map(({ text, logo }) => {
+          {btns.map(({ text, logo }, idx) => {
             return (
-              <div className={styles.btn}>
-                <img src={logo} className={styles.btnLogo} />
+              <div key={idx} className={styles.btn}>
+                <Image
+                  height={0}
+                  width={0}
+                  src={logo}
+                  className={styles.btnLogo}
+                />
                 <div className={styles.btnText}>{text}</div>
-                <img
+                <Image
+                  height={0}
+                  width={0}
                   src={"/media/icons/Line 7.svg"}
                   className={styles.btnIcon}
                 />
