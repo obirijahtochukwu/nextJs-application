@@ -10,7 +10,7 @@
   border: #{scaleXL(2)} solid $lightWhite;
   background: $transparent;
   backdrop-filter: blur(#{scaleXL(20)});
-  color: $white;
+  color: white !important;
 }
 
 .logo {
