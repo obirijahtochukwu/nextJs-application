@@ -42,18 +42,6 @@ export default function RootLayout({
   }, [windowWidth]);
   return (
     <html lang="en">
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@1,300&display=swap"
-          rel="stylesheet"
-        ></link>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Inter"
-        />
-      </Head>
       <body className={""}>{children}</body>
     </html>
   );

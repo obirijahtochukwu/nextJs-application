@@ -20,6 +20,7 @@ export default function Home() {
     >
       <article className={styles.loginBox}>
         <Image
+          alt=""
           height={0}
           width={0}
           src={"/media/login/logo.svg"}
@@ -44,6 +45,7 @@ export default function Home() {
             return (
               <div key={idx} className={styles.btn}>
                 <Image
+                  alt=""
                   height={0}
                   width={0}
                   src={logo}
@@ -51,6 +53,7 @@ export default function Home() {
                 />
                 <div className={styles.btnText}>{text}</div>
                 <Image
+                  alt=""
                   height={0}
                   width={0}
                   src={"/media/icons/Line 7.svg"}
